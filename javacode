@@ -1,0 +1,46 @@
+public class Airline {
+    private String name;
+    private String code;
+    private List<Flight> flights;
+    // getters and setters
+}
+
+public class Flight {
+    private String number;
+    private Date departureDate;
+    private Date arrivalDate;
+    private Time departureTime;
+    private Time arrivalTime;
+    private Airline airline;
+    private Airport departureAirport;
+    private Airport arrivalAirport;
+    private List<Pilot> pilots;
+    private Airplane airplane;
+    private List<Passenger> passengers;
+    // getters and setters
+}
+
+public class Airport {
+    private String code;
+    private String city;
+    private List<Flight> departingFlights;
+    private List<Flight> arrivingFlights;
+    // getters and setters
+}
+
+public class Pilot {
+    private String name;
+    private String licenseNumber;
+    private List<Flight> flights;
+    // getters and setters
+}
+
+public class Airplane {
+    private String equipmentNumber;
+    private int numberOfSeats;
+    private List<Flight> flights;
+    // getters and setters
+}
+
+public class Seat {
+   
